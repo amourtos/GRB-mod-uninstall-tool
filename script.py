@@ -48,8 +48,8 @@ if __name__ == "__main__":
     else:
         print(f"Deleting mod from game directory: {sys.argv[1]}")
         
-        main_file_path_to_delete = "mod-to-delete/Main"
-        resources_file_path_to_delete = "mod-to-delete/Resources"
+        main_file_path_to_delete = "mod_files_to_remove/Main"
+        resources_file_path_to_delete = "mod_files_to_remove/Resources"
         
         game_directory_resources = os.path.join(sys.argv[1], "DataPC_Resources_patch_01.forge")
         game_directory_main = os.path.join(sys.argv[1], "DataPC_patch_01.forge")

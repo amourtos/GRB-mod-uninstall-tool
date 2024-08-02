@@ -47,8 +47,8 @@ def start_deletion():
         messagebox.showwarning("Input Error", "Please select a game directory.")
         return
 
-    main_file_path_to_delete = "mod-to-delete/Main"
-    resources_file_path_to_delete = "mod-to-delete/Resources"
+    main_file_path_to_delete = "mod_files_to_remove/Main"
+    resources_file_path_to_delete = "mod_files_to_remove/Resources"
 
     game_directory_resources = os.path.join(game_directory, "DataPC_Resources_patch_01.forge")
     game_directory_main = os.path.join(game_directory, "DataPC_patch_01.forge")
@@ -86,7 +86,7 @@ control_frame = tk.Frame(main_frame)
 control_frame.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True)
 
 # Log area
-log_text = tk.Text(log_frame, wrap=tk.WORD, height=20, width=40, bg='black', fg='white')
+log_text = tk.Text(log_frame, wrap=tk.WORD, height=20, width=100, bg='black', fg='green')
 log_text.pack(expand=True, fill=tk.BOTH)
 log_text.config(state=tk.DISABLED)  # Initially disable editing
 
